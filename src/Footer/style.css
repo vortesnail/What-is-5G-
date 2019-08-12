@@ -1,0 +1,98 @@
+.bottomNav {
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    bottom: 0;
+    left: 0;
+    transition: all .6s;
+}
+
+.bottomNav .container {
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 1);
+    display: flex;
+}
+
+.bottomNav .container .left-container {
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    width: 17%;
+    background-color: #000;
+    position: relative;
+    z-index: 1000;
+}
+
+.bottomNav .container .left-container li {
+    list-style: none;
+    margin: 0 5px;
+    color: #fff;
+}
+
+.bottomNav .container .left-container li:hover {
+    cursor: pointer;
+}
+
+.bottomNav .container .left-container li.share:hover {
+    cursor: initial;
+}
+
+.bottomNav .container .left-container .share-icon i {
+    font-size: 24px;
+}
+
+.bottomNav .container .middle-container {
+    width: 66%;
+    height: 100%;
+    opacity: 0;
+    padding-left: 10%;
+    transition: all 0.8s;
+}
+
+.bottomNav .container .middle-container .year-container {
+    box-sizing: border-box;
+    width: 2000px;
+    height: 100%;
+    transition: all .8s;
+}
+
+.bottomNav .container .middle-container .year-container p {
+    display: inline-block;
+    width: 140px;
+    height: 100%;
+    line-height: 40px;
+    color: rgb(190, 190, 190);
+    text-align: center;
+}
+
+.bottomNav .container .middle-container .year-container p.middle-year {
+    color: #fff;
+    transform: scale(1.2);
+}
+
+.bottomNav .container .right-container {
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    width: 17%;
+    background-color: #000;
+    position: relative;
+    z-index: 100;
+}
+
+.bottomNav .container .right-container p {
+    line-height: 40px;
+    color: #fff;
+    font-size: 16px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+.bottomNav .container .right-container p:hover {
+    cursor: pointer;
+}

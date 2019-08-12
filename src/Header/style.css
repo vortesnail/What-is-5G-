@@ -1,0 +1,13 @@
+.logo {
+    display: block;
+    width: 100px;
+    height: auto;
+    position: fixed;
+    z-index: 100;
+    left: 20px;
+    top: 20px;
+}
+
+.logo img {
+    width: 100%;
+}
