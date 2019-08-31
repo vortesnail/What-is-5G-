@@ -26,7 +26,7 @@ import FourGImg8 from './img/4G/4G-8.jpg';
 import FourGImg9 from './img/4G/4G-9.png';
 import ShouJi1 from './img/shouji-1.jpeg';
 import ShouJi2 from './img/shouji-2.jpeg';
-import deathStranding from './img/deathStranding.MP4';
+import deathStranding from './img/deathStranding.mp4';
 import FiveGImg from './img/5G/5G.jpg';
 import FiveGLogo from './img/5G.png';
 
