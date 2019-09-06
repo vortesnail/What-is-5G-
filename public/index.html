@@ -9,20 +9,48 @@
   <meta name="keywords" content="什么是5G,What is 5G" />
   <meta name="description" content="关于5G的简单介绍" />
   <link rel="stylesheet" href="./iconfont/iconfont.css">
+  <link rel="stylesheet" href="./index.css">
   <script type="text/javascript" src="https://at.alicdn.com/t/font_1320191_wqeun45h0fe.js"></script>
-  <style type="text/css">
-    .icon {
-      width: 1em;
-      height: 1em;
-      vertical-align: -0.15em;
-      fill: currentColor;
-      overflow: hidden;
-    }
-  </style>
 </head>
 
 <body>
   <div id="root"></div>
+
+  <!-- 加载 -->
+  <div class="loading-mask">
+      <div class="loading-wrap">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+      </div>
+      <p class="loading-text">Loading<span class="dot">...</span></p>
+    </div>
+  <script>
+    document.onreadystatechange = subSomething;//当页面加载状态改变的时候执行这个方法.
+    let lodingMask = document.querySelector('.loading-mask');
+    function subSomething() {
+      console.log('loading');
+      if (document.readyState == "complete") //当页面加载状态
+        lodingMask.style.display = 'none';
+    }
+  </script>
 </body>
 
 </html>
